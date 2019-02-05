@@ -1,0 +1,87 @@
+extends playout
+
+block vars
+  -var title = "New Projects"
+
+block content
+    #myContainer
+    .container
+        .jumbotron.text-center.splash2
+            h1.jumboh1 New Projects
+    hr.section-divider
+    h1.wrap Project Proposal
+    br
+    br
+    .container
+        form
+            .row
+                .col-md-6
+                    h3 Project Description
+                    .form-group
+                        label(for='first') Describe how the project idea came about:
+                        input#first.form-control(type='text', placeholder='1')
+                .col-md-6
+                    .form-group
+                        br
+                        label(for='last')
+                            | Identify at a high level what value your product or idea will provide (i.e. what does your project
+                            | do:
+                        input#last.form-control(type='text', placeholder='1')
+            .row
+                .col-md-6
+                    .form-group
+                        label(for='phone')
+                        input#phone.form-control(type='tel', placeholder='2')
+                .col-md-6
+                    .form-group
+                        label(for='projectName')
+                        input#pjname.form-control(type='text', placeholder='2')
+            .row
+                .col-md-6
+                    .form-group
+                        label(for='email')
+                        input#email.form-control(type='email', placeholder='3')
+                .col-md-6
+                    .form-group
+                        label(for='projectDescription')
+                        input#email.form-control(type='email', placeholder='3')
+                        // <textarea class="form-control" rows="4" cols="57">Write here..</textarea>
+            hr.section-divider
+            .row
+                .col-md-6
+                    h3 Scope
+                    .form-group
+                        label(for='first') Who is your market?
+                        textarea.form-control(rows='4', cols='57') Write here..
+                .col-md-6
+                    br
+                    .form-group
+                        label(for='last')
+                            | Identify potential roadblocks or difficulties you feel you will need to overcome:
+                        textarea.form-control(rows='4', cols='57') Write here..
+            hr.section-divider
+            h3 High Level Requirements
+            .row
+                .col-sm
+                    .form-group
+                        label(for='first') What types of people will you need to help you develop the idea:
+                        textarea.form-control(rows='4', cols='57') Write here..
+                .col-sm
+                    .form-group
+                        label(for='last')
+                            | What expertise will you need that is not at Neumont:
+                        textarea.form-control(rows='4', cols='57') Write here..
+                .col-sm
+                    label(for='last')
+                        | What specific market are you looking at:
+                    .form-group
+                        br
+                        textarea.form-control(rows='4', cols='57') Write here..
+            hr.section-divider
+            h3 Other Information – anything you need us to know:
+            .row
+                .col-sm
+                    textarea.form-control(rows='6', cols='60') Write here..
+            br
+            .container.subBtnContainer.wrap
+                button.btn(type='submit') Submit

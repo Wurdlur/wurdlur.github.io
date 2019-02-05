@@ -1,0 +1,106 @@
+{
+    "foodMenu":[
+        {
+            "burgers":[
+                {
+                    "name":"The Hannibal Lecter",
+                    "price":"13.00",
+                    "description":"Named after one of the most iconic characters in literature, the Hannibal Lecter is absolutely 'de-lecter-ble'. Human patty topped with lettuce, tomato, onion, bacon, and optional cheese.",
+                    "imageName":"/images/Lecter.jpg"
+                },
+                {
+                    "name":"The Jeffrey Dahmer",
+                    "price":"12.00",
+                    "description":"Inspired by the 'Milwaukee Cannibal' Jeffrey Dahmer, this burger is loaded with the finest Wisconsin cheese. Human patty topped with Wisconsin cheddar, lettuce, and tomato.",
+                    "imageName":"/images/Dahmer.jpg"
+                },
+                {
+                    "name":"The Albert Fish",
+                    "price":"7.00",
+                    "description":"A burger made of fresh, farm raised children. A regular human patty topped with lettuce, tomato, onion, and optional cheese. See the 'Kiddie Burger' for a child sized portion.",
+                    "imageName":"/images/AlbertFishBurger.jpg"
+                },
+                {
+                    "name":"The Red Dragon",
+                    "price":"15.00",
+                    "description":"The Red Dragon is a 1/2lb burger that is only served rare and bloody. We are not responsible for any cases of food poisoning. Order at your own risk. Human patty topped with lettuce, tomato, onion, and optional cheese.",
+                    "imageName":"/images/RedDragon.jpg"
+                },
+                {
+                    "name":"The Kiddie Burger",
+                    "price":"5.00",                    
+                    "description":"An option for our younger guests, the Kiddie Burger is made from fresh, farm raised children. Human patty topped with lettuce, tomato, onion, and optional cheese.",
+                    "imageName":"/images/KiddieBurger.jpg"
+                }
+            ]
+        },
+        {
+            "sides":[
+                {
+                    "name":"The Vlad",
+                    "price":"6.00",
+                    "description":"Savory chunks of grilled human meat brushed with teriyaki sauce on a skewer.",
+                    "imageName":"/images/VladSkewer.jpg"
+                },
+                {
+                    "name":"Brain Soup",
+                    "price":"8.00",
+                    "description":"Noodle soup with pork broth and human brains.",
+                    "imageName":"/images/BrainSoup.jpg"
+                },
+                {
+                    "name":"\"Chicken\" Fingers",
+                    "price":"4.00",
+                    "description":"Deep fried human fingers, comes with a side of barbeque sauce.",
+                    "imageName":"/images/ChickenFingers.jpg"
+                },
+                {
+                    "name":"Silence of the Lamb Chops",
+                    "price":"8.00",
+                    "description":"Named after the famous novel by Thomas Harris, these lamb chops aren't actually lamb, but human. These human chops are grilled with a brown sugar glaze and garnished with fresh parsley.",
+                    "imageName":"/images/SilenceChops.jpg"
+                },
+                {
+                    "name":"Loaded Skins",
+                    "price":"5.00",
+                    "description":"Fried human skins covered in cheese, sour cream, green onions, and bacon.",
+                    "imageName":"/images/Skins.jpg"
+                }
+            ]
+        },
+        {
+            "desserts":[
+                {
+                    "name":"The Sweeney Todd",
+                    "price":"10.00",
+                    "description":"A meat pie filled with minced meats and a range of fruits.",
+                    "imageName":"/images/MeatPie.jpg"
+                },
+                {
+                    "name":"Lover's Dumplings",
+                    "price":"9.00",
+                    "description":"Sweet dumplings made using shortening made from human fat.",
+                    "imageName":"/images/Dumplings.jpg"
+                },
+                {
+                    "name":"Eye Pops",
+                    "price":"6.00",
+                    "description":"Like a cake pop, but just a sugared eyeball.",
+                    "imageName":"/images/Eyeballs.jpg"
+                },
+                {
+                    "name":"Tongue Pops",
+                    "price":"6.00",
+                    "description":"Like a popsicle, but just someone's tongue frozen and soaked in sugar water. Try not to think about it.",
+                    "imageName":"/images/TonguePop.jpg"
+                },
+                {
+                    "name":"Actual Human Feces",
+                    "price":"5.00",
+                    "description":"Exactly what it says it is. Comes in a dish or a cone.",
+                    "imageName":"/images/Feces.jpg"
+                }
+            ]
+        }
+    ]
+}

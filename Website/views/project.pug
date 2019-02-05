@@ -1,0 +1,97 @@
+extends playout
+
+block vars
+  -var title = "Projects"
+
+block content
+    #myContainer
+    .container
+        .jumbotron.text-center.splash2
+            h1.jumboh1 Current Projects
+    hr.section-divider
+    .container
+        .container-fluid
+            .row
+                .col-sm
+                    .otherwrap
+                        h2#projusername1 Neumont
+                    #jerryText
+                        h3#projname1
+                        p#projdesc1
+                .col-sm
+                    #ImageContainer
+                        img#projimg1(alt=' ')
+    hr.section-divider
+    .container
+        .container-fluid
+            .row
+                .col-sm
+                    .otherwrap
+                        h2#projusername2 Neumont
+                    #jerryText
+                        h3#projname2
+                        p#projdesc2
+                .col-sm
+                    #ImageContainer
+                        img#projimg2(alt='')
+    hr.section-divider
+    .container
+        .container-fluid
+            .row
+                .col-sm
+                    .otherwrap
+                        h2#projusername3 Neumont
+                    #jerryText
+                        h3#projname3
+                        p#projdesc3
+                .col-sm
+                    #ImageContainer
+                        img#projimg3(alt=' ')
+    hr.section-divider
+    .container
+        .container-fluid
+            .row
+                .col-sm
+                    .otherwrap
+                        h2#projusername4 Neumont
+                    #jerryText
+                        h3#projname4
+                        p#projdesc4
+                .col-sm
+                    #ImageContainer
+                        img#projimg4(alt='')
+    hr.section-divider
+    .container
+        .container-fluid
+            .row
+                .col-sm
+                    .otherwrap
+                        h2#projusername5 Neumont
+                    #jerryText
+                        h3#projname5
+                        p#projdesc5
+                .col-sm
+                    #ImageContainer
+                        img#projimg5(alt=' ')
+    hr.section-divider
+    .container
+        .container-fluid
+            .row
+                .col-sm
+                    .otherwrap
+                        h2#projusername6 Neumont
+                    #jerryText
+                        h3#projname6
+                        p#projdesc6
+                .col-sm
+                    #ImageContainer
+                        img#projimg6(alt='')
+    hr.section-divider
+    .container-fluid
+        #jerryText
+            | Previous Award Winners List
+    hr.section-divider
+    h1.wrap Interested?
+    .container-fluid.wrap
+        a.btn.darkBtn(href='/payproject/new', role='button') Register
+    script(src='/scripts/projscript.js')

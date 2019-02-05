@@ -1,0 +1,96 @@
+extends playout
+
+block vars
+  -var title = "Home"
+
+block content
+  #myContainer
+    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+      .carousel-inner
+        .carousel-item.active
+        .carousel-item
+        .carousel-item
+    #myImg.jumbotron.text-center.mainPage
+      h1#carouselTitle.jumboh1.mainText
+      p#carouselInfo.secondaryText.mainText
+      a#castle.btn.darkBtn(href='/payproject/contact', role='button') Learn More
+      a#hand.btn.darkBtn(href='/payproject/apply', role='button') Apply
+      a#card.btn.darkBtn(href='/payproject/new', role='button') Join
+    #btnContainer.otherwrap
+      button#myButton1.btn.drkBtn.carButton(onclick='currentDiv(1)')
+        i.fab.fa-fort-awesome
+      button#myButton2.btn.drkBtn.carButton(onclick='currentDiv(2)')
+        i.far.fa-handshake
+      button#myButton3.btn.drkBtn.carButton(onclick='currentDiv(3)')
+        i.fas.fa-address-card
+  hr.section-divider
+  #myContainer
+    .row
+      .col-sm
+        #ImageContainer
+          img(src='https://petersonsbackup.blob.core.windows.net/static/cdn/profiles/10000928/32d682d7-939b-4e71-ad3f-cd7a2dcdfe1c', alt='')
+      .col-sm
+        .otherwrap
+          h2 Learn More
+        #jerryText
+          p Learn more about Neumonts Entrepreneur Program!
+          p Learn about it's founder, Jerry Pay.
+          p Get in touch with us and ask questions for more infromation.
+        #btnContainer.otherwrap
+          a.btn.darkBtn(href='/payproject/contact', role='button') Learn Now
+  hr.section-divider
+  #myContainer
+    .row
+      .col-sm
+        .otherwrap
+          h2 Join Others
+        #jerryText
+          p Wanna join a team and make a project reality?
+          p Join projects now that are looking for team members!
+          p Or advertise your new project for others to see and to join!
+        #btnContainer.otherwrap
+          a.btn.darkBtn(href='/payproject/new', role='button') Join Now
+      .col-sm
+        #ImageContainer
+          img(src='https://www.cappex.com/assets/c-2000/photos/042915_staffheadshots_0429.jpg', alt='')
+  hr.section-divider
+  #myContainer
+    .row
+      .col-sm
+        #ImageContainer
+          img(src='https://www.neumont.edu/cmsimages/visit-frex.png', alt='')
+      .col-sm
+        .otherwrap
+          h2 Apply Now
+        #jerryText
+          p Have a project you really wanna do?
+          p Want to make it become a reality?
+          p Apply today and join the Neumont Entrepreneur Program!
+        #btnContainer.otherwrap
+          a.btn.darkBtn(href='/payproject/apply', role='button') Apply Now
+  hr.section-divider
+  #myContainer
+    .row
+      .col-sm
+        #eventsHolder.eventwrap
+      .col-sm
+        #ImageContainer
+          img(src='https://image.isu.pub/170901185201-657fa5d20840eb7aaf22a8bb1ccec08a/jpg/page_1_thumb_large.jpg', alt='')
+  hr.section-divider
+  #myContainer
+    .row
+      .col-sm
+        #ImageContainer
+          img(src='https://i.vimeocdn.com/video/646341576_780x439.jpg', alt='')
+      .col-sm
+        .otherwrap
+          h2 Previous Projects
+        #jerryText
+          p Don't know what's expected of you?
+          p Just looking for some inspiration?
+          p Checkout our previous projects that have been created!
+        #btnContainer.otherwrap
+          a.btn.darkBtn(href='/payproject/project', role='button') View Now
+  script(src='/scripts/indexEvent.js')
+  script(src='/scripts/indexscript.js')
+

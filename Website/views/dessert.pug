@@ -1,0 +1,14 @@
+extends blayout
+
+block vars
+    -var title = "Desserts"
+
+block content
+    each val in menu.foodMenu[2].desserts
+        div(class='allInfo')
+            img.burgerImage(src= val.imageName)
+            div(class='foodInfo') 
+                div(class='namePrice')
+                    h2(class='foodName') #{val.name}
+                    p(class='foodPrice') $#{val.price}
+                p(class='foodDesc') #{val.description}

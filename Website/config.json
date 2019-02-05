@@ -1,0 +1,10 @@
+{
+  "menu": [
+    ["Portfolio", "/"],
+    ["Home", "/burgers/"],
+    ["Location", "location"],
+    ["Burgers", "burger"],
+    ["Sides", "side"],
+    ["Desserts", "dessert"] 
+  ]
+}

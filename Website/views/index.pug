@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    div(class='info-box top')
+        .col
+            .row
+                p(id='infoName') Johnathan Auchterlonie
+                p(id='infoTitle') 
+                    em Full Stack Developer
+                hr
+            .row
+                p(id='infoMsg') Welcome to my digital portfolio. Learn about me by
+                    | taking a look at my 
+                    a(href='/projects') projects
+                    |  and my aquired skills/expeirences. If
+                    |  you have any questions feel free to "contact" me anytime.
+                p(id='infoMsg') I am a full stack devloper that likes to spend his
+                    | time interacting and exploring with as many web technologies as I
+                    | can. To learn more see my 
+                    a(href='/about') about page
+                    |  for more information.
+        div(class='col' id='welcomeImg')
+    div(class='info-box')
+        div(class='col' id='projectImg')
+        .col
+            .row
+                p(id='infoName') Projects
+                p(id='infoTitle') 
+                    em My Finished Projects
+                hr
+            .row
+                p(id='infoMsg') I like woking inside of Node.Js woking along with pug
+                    | , express, angular and all sort of other technologies to create
+                    |  my projects. For more information on technologies I know, or am
+                    |  experienced in check out my 
+                    a(href='#resume') resume
+                    | . 
+                p(id='infoMsg') I am currently an intern at Braintrace helpling them
+                    |  build and update a web application using some of the technolgies
+                    |  I know as well some I'm just learning. For more information on
+                    |  my current of future endeavors check out my 
+                    a(href='https://www.linkedin.com/in/johnathan-auchterlonie-ba23aba8/') LinkedIn
+                    | .
+    div(class='info-box bottom' id='resume')
+        <iframe src="/pdf/Resume.pdf" style="width:100%;"></iframe>

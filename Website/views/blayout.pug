@@ -1,0 +1,17 @@
+doctype html
+hmtl
+  head
+    block vars
+    title #{title}
+    link(href = '/css/style.css' rel = 'stylesheet')
+  body
+    header
+      nav(class="navbar")
+        ul
+          each item in config.menu
+            a(href=item[1])
+              div(class="menu")
+                li(id=item[0]) #{item[0]}
+      h1 #{title}
+    block content
+    footer

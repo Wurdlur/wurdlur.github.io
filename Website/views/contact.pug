@@ -1,0 +1,90 @@
+extends playout
+
+block vars
+  -var title = "Contact"
+
+block content 
+    #myContainer
+    .container
+        .jumbotron.text-center.splash2
+            h1.jumboh1 Contact Us
+    hr.section-divider
+    .container-fluid
+        .row
+            .container
+                .container-fluid
+                    .row
+                        .col-sm
+                            #ImageContainer
+                                img(src='https://www.neumont.edu/cmsimages/faculty_jerrypayx.png', alt='')
+                        .col-sm
+                            .otherwrap
+                                h2 Mr. Jerry Pay
+                            #jerryText
+                                #cardInformation
+                                    p
+                                        | Manager of the Innovation Center
+                                        br
+                                        |  143 South Main St
+                                        br
+                                        |  Salt Lake City, UT 84111
+                                        br
+                                        strong Hours:
+                                        |  M-F, 8 a.m.-5 p.m.
+                                        br
+                                        strong Email:
+                                        a(href='mailto:j.pay@neumont.edu') j.pay@neumont.edu
+                                        br
+                            #btnContainer.otherwrap
+                                a.btn.darkBtn(href='https://www.neumont.edu/academics/our-faculty/jerry-pay.html', target='_blank', role='button') Learn More
+        hr.section-divider
+        .container
+            .container-fluid
+                .row
+                    .col-sm
+                        .otherwrap
+                            h2 Neumont
+                        #jerryText
+                            p
+                                | College of Computer Science
+                                br
+                                |  143 South Main St
+                                br
+                                |  Salt Lake City, UT 84111
+                                br
+                                strong Hours:
+                                |  M-F, 8 a.m.-5 p.m.
+                                br
+                                strong Phone:
+                                |  1-888-638-6668 (front desk)
+                                br
+                                strong Email:
+                                a(href='mailto:info@neumont.edu') info@neumont.edu
+                                br
+                                strong Location:
+                                |  See Map Below
+                                br
+                        #btnContainer.otherwrap
+                            a.btn.darkBtn(href='http://neumont.smartcatalogiq.com/en/2017-2018/Catalog/About-Neumont-University/Neumont-History', tagret='_blank', role='button') Our History
+                    .col-sm
+                        #ImageContainer
+                            img(src='https://www.downtownrising.com/_files/images/neumontu.jpg', alt='')
+    hr.section-divider
+    .container-fluid.wrap
+        #map-canvas
+        script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', type='text/javascript')
+    hr.section-divider
+    .formBox.wrap
+        #wrapper
+            #fBox
+                h2
+                    span.thin Message Us
+                p Please fill out the following information to receive additional information.
+                form.messageForm(name='myForm', method='post', enctype='text/plain')
+                    input#fname(type='text', placeholder='First Name*', name='First Name', required='')
+                    input#lname(type='text', placeholder='Last Name*', name='Last Name', required='')
+                    input#email(type='email', placeholder='Email', name='Email', required='')
+                    input#message(type='text', placeholder='Message', name='Message')
+                    .container.subBtnContainer.wrap
+                        button.btn(type='submit') Submit
+    script(src='/scripts/map_script.js')

@@ -1,0 +1,126 @@
+doctype html
+html
+    head
+        block vars
+        link(rel='shortcut icon', type='image/x-icon', href='/images/nc_vert-fc-oncharcoal.ico')
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css', integrity='sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4', crossorigin='anonymous')
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.13/css/all.css', integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp', crossorigin='anonymous')
+        link(rel='stylesheet', href='/sass/main.css')
+        title #{title}
+        link(rel='stylesheet', type='text/css', href='/sass/jsCalendar.css')
+        link(rel='stylesheet', type='text/css', href='/sass/jsCalendar.clean.css')
+        script(type='text/javascript', src='/scripts/jsCalendar.js')
+    body(onload='elements.addButton.click()')
+        nav.navbar.navbar-expand-md.navbar-dark.fixed-top
+            a.navbar-brand(href='#')
+                img#brand(src='/images/nc_vert-fc-oncharcoal.png')
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarCollapse.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link.disabled(href='/') Portfolio
+                    li.nav-item.active
+                        a.nav-link.disabled(href='/payproject/') Home
+                    li.nav-item.active
+                        a.nav-link.disabled(href='/payproject/project') Projects
+                    li.nav-item.active
+                        a.nav-link.disabled(href='/payproject/new') New Projects
+                    li.nav-item.active
+                        a.nav-link.disabled(href='/payproject/contact') Contact Us
+                    li.nav-item.active
+                        a.nav-link.disabled(href='/payproject/apply') Apply
+                    li.nav-item.active
+                        a.nav-link.disabled(href='/payproject/calendar') Calendar
+        block content
+        #myContainer.mainFooter
+            .row
+                .col-sm.footerLeft
+                    h5
+                        | UNITING BUSINESS, TECHNOLOGY, AND CREATIVITY TO EDUCATE THE INNOVATORS OF TOMORROW
+                    p
+                        | Since 2003, Neumont College of Computer Science has been the training ground for modern-day tech heroes to hone their analytical,
+                        | creative, and coding skills to create the software that will change the world. Our students earn industry-proven
+                        | degrees focused on computer science, while developing a portfolio of real-world experience through project-based
+                        | learning.
+                    p
+                        | Neumont College of Computer Science is accredited by the Accrediting Commission of Career Schools and Colleges (ACCSC).
+                    p
+                        | © NEUMONT COLLEGE OF COMPUTER SCIENCE. ALL RIGHTS RESERVED.
+                        br
+                        |  143 SOUTH MAIN STREET, SALT LAKE CITY, UTAH 84111
+                        br
+                        a(href='tel:18886386668') 1-888-NEUMONT (1-888-638-6668)
+                .col-sm
+                    h5
+                        | BACHELOR OF SCIENCE DEGREE PROGRAMS
+                    p
+                        a(href='bscs.html') BSCS: Computer Science
+                        br
+                        a(href='bsgd.html') BSGD: Game Development
+                        br
+                        a(href='bsis.html') BSIS: Information Systems
+                        br
+                        a(href='bstm.html') BSTM: Tech Management
+                        br
+                        a(href='bswd.html') BSWD: Web Development
+                    h5
+                        | CAREERS AT NEUMONT
+                    p
+                        a(href='about-us/careers-at-Neumont.html') Join Our Team
+                    h5
+                        | SHOP NEUMONT
+                    p
+                        a(href='http://gear.neumont.edu/', target='_blank') Gear Store
+                .col-sm
+                    h5
+                        | QUICK LINKS
+                    p
+                        a(href='academiccalendar/index.html')
+                            | Academic Calendar
+                            br
+                        a(href='consumerdisclosures.html')
+                            | Consumer Disclosures
+                            br
+                        a(href='/about-us/contact-us.html') Contact Us
+                        br
+                        a(href='catalog.html') Course Catalog
+                        br
+                        a(href='#') I
+                        a(href='about-us/documents.html')
+                            | mportant Documents
+                            br
+                        a(href='neumontreviews.html') Neumont Reviews
+                        br
+                        a(href='newsevents.html') News & Events
+                        br
+                        a(href='privacypolicy.html') Privacy Policy
+                        br
+                        a(href='scholarships/index.html') Scholarships
+                        br
+                        a(href='/site-map.html')
+                            | Site Map
+                            br
+                        a(href='top10/index.html') Top Advantages
+                        br
+                        a(href='tuition/index.html') Tuition 
+            #followUs
+                span Follow Us:
+                a(href='https://www.twitter.com/neumontcs')
+                    i.fab.fa-twitter-square
+                a(href='https://www.facebook.com/neumont')
+                    i.fab.fa-facebook-square
+                a(href='https://www.youtube.com/c/neumont')
+                    i.fab.fa-youtube-square
+                a(href='https://instagram.com/neumontcs')
+                    i#instagram.fab.fa-instagram
+                a(href='https://blog.neumont.edu/')
+                    i.fab.fa-blogger-b
+        script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ', crossorigin='anonymous')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js', integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm', crossorigin='anonymous')
+        script(src='/scripts/cal.js')
+

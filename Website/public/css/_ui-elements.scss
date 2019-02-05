@@ -1,0 +1,110 @@
+html {
+    background: #000;
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    z-index: -1;
+}
+
+#playArea {
+    position: absolute;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: block;
+    z-index: 1;
+    background: #000;
+    opacity: .80;
+    .nav-left {
+        display: inline-block;
+    }
+    li {
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+    }
+    .nav-right {
+        float: right;
+    }
+    a {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 25px;
+        font-family: 'Audiowide', cursive;
+    }
+}
+
+.info-box {
+    text-align: center;
+    width: 70%;
+    background: #FFF;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    .col {
+        flex: 1;
+        flex-direction: column;
+    }
+    .row {
+        flex: 1;
+        flex-direction: row;
+    }
+    #welcomeImg {
+        background-image: url(../images/me.png);
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    #projectImg {
+        background-image: url(https://netplus.agency/wp-content/uploads/2016/08/GettyImages-538373113.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #expressImg {
+        background-image: url(../images/AlbertFishBurger.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    #payImg {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Neumont_University%27s_campus_in_downtown_Salt_Lake_City%2C_Utah..jpg/1599px-Neumont_University%27s_campus_in_downtown_Salt_Lake_City%2C_Utah..jpg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    #infoName {
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-decoration: underline;
+        font-family: 'Audiowide', cursive;
+    }
+    #infoTitle {
+        font-size: 25px;
+        padding-bottom: 20px;
+        font-family: 'Audiowide', cursive;
+    }
+    #infoMsg {
+        font-size: 20px;
+        text-align: left;
+        padding: 30px;
+        padding-bottom: 15px;
+        font-family: 'VT323', monospace;
+        a {
+            text-decoration: none;
+            color: #6DAFD9;
+        }
+    }
+}
+
+.top {
+    margin-top: 80px;
+}
+
+.bottom {
+    margin-bottom: 80px;
+}

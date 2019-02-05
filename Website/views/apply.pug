@@ -1,0 +1,155 @@
+extends playout
+
+block vars
+  -var title = "Apply"
+
+block content 
+  #myContainer
+    .jumbotron.text-center.splash
+      .container
+        h1.jumboh1.wrap Apply Today
+  hr.section-divider
+  .container
+    h2.wrap Join the Innovation Lab
+    p#labtext
+      strong Innovators
+      |  start here. The Innovation Lab at Neumont College of Computer Science. Students and alumni looking
+      |       to join the Innovation Lab must submit an application. Applicants will be judged on the project's potential for success
+      |       in the marketplace. If you are interested but would like more information please register your credentials and get
+      |       in contact with us.
+  hr.section-divider
+  .container
+    br
+    ul.nav.nav-pills.wrap(role='tablist')
+      li.nav-item.pill-1
+        a.nav-link.active(data-toggle='pill', href='#home') Apply
+      li.nav-item.pill-2
+        a.nav-link(data-toggle='pill', href='#menu1') Request Info
+      li.nav-item.pill-3
+        a.nav-link(data-toggle='pill', href='#menu2') Additional Info
+    .tab-content
+      #home.container.tab-pane.active
+        br
+        .container
+          form
+            .row
+              .col-md-6
+                .form-group
+                  label(for='first') First Name
+                  input#first.form-control(type='text', placeholder='John')
+              .col-md-6
+                .form-group
+                  label(for='last') Last Name
+                  input#last.form-control(type='text', placeholder='Doe')
+            .row
+              .col-md-6
+                .form-group
+                  label(for='phone') Phone Number
+                  input#phone.form-control(type='tel', placeholder='123-456-7890')
+              .col-md-6
+                .form-group
+                  label(for='projectName') Project Name
+                  input#pjname.form-control(type='text', placeholder="'Shopping List'")
+            .row
+              .col-md-6
+                .form-group
+                  label(for='email') Email Address
+                  input#email.form-control(type='email', placeholder='example@email.com')
+              .col-md-6
+                .form-group
+                  label(for='projectDescription') Your Project Description
+                  textarea.form-control(rows='4', cols='57') Write here..
+            .container.subBtnContainer
+              button.btn(type='submit') Submit
+      #menu1.container.tab-pane.fade
+        br
+        .container
+          form
+            .row
+              .col-md-6
+                .form-group
+                  label(for='first') First Name
+                  input#first.form-control(type='text', placeholder='John')
+              .col-md-6
+                .form-group
+                  label(for='last') Last Name
+                  input#last.form-control(type='text', placeholder='Doe')
+            .row
+              .col-md-6
+                .form-group
+                  label(for='phone') Phone Number
+                  input#phone.form-control(type='tel', placeholder='123-456-7890')
+              .col-md-6
+                .form-group
+                  label(for='state') State/Province/Region
+                  input#state.form-control(type='text', placeholder='Utah')
+            .row
+              .col-md-6
+                .form-group
+                  label(for='email') Email Address
+                  input#email.form-control(type='email', placeholder='example@email.com')
+              .col-md-6
+                .form-group
+                  label(for='address') Address
+                  input#address.form-control(type='text', placeholder='10 Cloverfield Lane')
+                  // <textarea class="form-control" rows="4" cols="57">Write here..</textarea>
+            .row
+              .col-md-6
+                .form-group
+                  label(for='city') City
+                  input#city.form-control(type='text', placeholder='Salt Lake City')
+              .col-md-6
+                .form-group
+                  label(for='zip') ZIP/Postal Code
+                  input#zip.form-control(type='text', placeholder='123456')
+                  // <textarea class="form-control" rows="4" cols="57">Write here..</textarea>
+            .row
+              .col-md-6
+                .form-group
+                  label(for='country') Country
+                  input#country.form-control(type='text', placeholder='United States')
+              .col-md-6
+                .form-group
+                  label(for='addmessage') Message
+                  // <input type="text" class="form-control" placeholder="" id="addmessage">
+                  textarea.form-control(rows='2', cols='57') Write here..
+            .container
+              .row
+                .col-sm
+                  label(for='contact-preference') Current Education Level
+                  .radio
+                    input(type='radio', name='gender', value='male', checked='')
+                    |  Graduate
+                    br
+                    input(type='radio', name='gender', value='female')
+                    |  Undergraduate
+                    br
+                    input(type='radio', name='gender', value='other')
+                    |  Other
+                .col-sm
+                  label(for='contact-preference') When is the best time of day to reach you?
+                  .radio
+                    label
+                      input#contact-preference(type='radio', name='contact-preference', value='am', checked='')
+                      | Morning
+                  .radio
+                    label
+                      input#contact-preference(type='radio', name='contact-preference', value='pm', checked='')
+                      | Evening
+            .container.subBtnContainer
+              button.btn(type='submit') Submit
+      #menu2.container.tab-pane.fade
+        br
+        .container
+          //
+            <p id="labtext">The Innovation Lab assists students in turning their projects into businesses. The Lab connects student teams with
+            other entrepreneurs across the state through meaningful partnerships in business, technology, and government.
+            With the Lab's help, you can turn your idea into reality. </p>
+        .container
+          ul.nav.flex-column.helpLink
+            li.nav-item
+              a.nav-link(href='/payproject/contact') Contact Us
+            li.nav-item
+              a.nav-link(href='https://www.neumont.edu') School Website
+            li.nav-item
+              a.nav-link(href='https://www.neumont.edu/innovate.html') More about the Innovation Lab

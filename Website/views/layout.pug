@@ -1,0 +1,29 @@
+doctype html
+html(id='playArea')
+  head
+    block vars
+    title #{title}
+    link(href = '/css/main.css' rel = 'stylesheet')
+    link(href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet")
+    script(src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js')
+    script(src="/scripts/background.js" defer="defer")
+  body
+    div(id='playArea')
+      header
+        ul(class = 'nav-left' id='navbar-left')
+          li
+            a(href='/' class='link') John's Portfolio
+          li
+            a(href='/' class='link') Home
+          li
+            a(href='/about' class='link') About
+        ul(class = 'nav-right' id='navbar-right')
+          li
+            a(href='/projects' class='link') Projects
+          li
+            a(href='https://www.linkedin.com/in/johnathan-auchterlonie-ba23aba8/' class='link') Linked In
+          li
+            a(href='/#resume' class='link') Resume
+      block content
+    footer
