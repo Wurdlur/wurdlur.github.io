@@ -1,10 +1,14 @@
 extends layout
 
+block vars
+    -var title = "Portfolio | Projects"
+
 block content
     div(class='info-box top')
         .col
             .row
-                p(id='infoName') Express Burgers
+                p(id='infoName') 
+                    a(href='/burgers/') Express Burgers
                 p(id='infoTitle') 
                     em Interactive Web Development
                 hr
@@ -18,12 +22,13 @@ block content
                     |  upkeep. To the finsihed product of this site visit 
                     a(href='/burgers/') here
                     | .
-        div(class='col' id='expressImg')
+        a(class='col' id='expressImg' href='/burgers/')
     div(class='info-box bottom')
-        div(class='col' id='payImg')
+        a(class='col' id='payImg' href='/payproject/')
         .col
             .row
-                p(id='infoName') Pay Back Time
+                p(id='infoName')
+                    a(href='/payproject/') Pay Back Time
                 p(id='infoTitle') 
                     em Advanced Web Scrypting
                 hr

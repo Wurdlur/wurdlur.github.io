@@ -93,11 +93,19 @@ header a {
   font-family: 'Audiowide', cursive;
 }
 
+header a .nav-logo {
+  float: left;
+  height: 35px;
+  width: 35px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
 .info-box {
   text-align: center;
   width: 70%;
   background: #FFF;
-  height: 500px;
+  min-height: 500px;
   margin: auto;
   margin-top: 100px;
   display: -webkit-box;
@@ -132,7 +140,7 @@ header a {
 }
 
 .info-box #projectImg {
-  background-image: url(https://netplus.agency/wp-content/uploads/2016/08/GettyImages-538373113.jpg);
+  background-image: url(https://cdn-images-1.medium.com/max/1600/1*-xlCG5r86ocNFhC5iE658A.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -155,6 +163,10 @@ header a {
   padding-bottom: 20px;
   text-decoration: underline;
   font-family: 'Audiowide', cursive;
+}
+
+.info-box #infoName a {
+  color: #000;
 }
 
 .info-box #infoTitle {

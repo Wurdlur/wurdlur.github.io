@@ -3,6 +3,7 @@ html(id='playArea')
   head
     block vars
     title #{title}
+    link(rel='shortcut icon', type='image/x-icon', href='/images/Logo.ico')
     link(href = '/css/main.css' rel = 'stylesheet')
     link(href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet")
@@ -11,6 +12,8 @@ html(id='playArea')
   body
     div(id='playArea')
       header
+        a(href='/' class='link')
+              img(src='/images/Logo.png' class='nav-logo')
         ul(class = 'nav-left' id='navbar-left')
           li
             a(href='/' class='link') John's Portfolio
@@ -24,6 +27,6 @@ html(id='playArea')
           li
             a(href='https://www.linkedin.com/in/johnathan-auchterlonie-ba23aba8/' class='link') Linked In
           li
-            a(href='/#resume' class='link') Resume
+            a(href='/about/#resume' class='link') Resume
       block content
     footer

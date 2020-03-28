@@ -1,7 +1,10 @@
 extends layout
 
+block vars
+    -var title = "Portfolio | Home"
+
 block content
-    div(class='info-box top')
+    div(class='info-box bottom')
         .col
             .row
                 p(id='infoName') Johnathan Auchterlonie
@@ -13,14 +16,14 @@ block content
                     | taking a look at my 
                     a(href='/projects') projects
                     |  and my aquired skills/expeirences. If
-                    |  you have any questions feel free to "contact" me anytime.
-                p(id='infoMsg') I am a full stack devloper that likes to spend his
-                    | time interacting and exploring with as many web technologies as I
-                    | can. To learn more see my 
+                    |  you have any questions feel free to contact me anytime.
+                p(id='infoMsg') I am a full stack web devloper that likes to spend his
+                    |  time interacting and exploring with as many web technologies as I
+                    |  can. To learn more see my 
                     a(href='/about') about page
                     |  for more information.
         div(class='col' id='welcomeImg')
-    div(class='info-box')
+    div(class='info-box top')
         div(class='col' id='projectImg')
         .col
             .row
@@ -35,11 +38,11 @@ block content
                     |  experienced in check out my 
                     a(href='#resume') resume
                     | . 
-                p(id='infoMsg') I am currently an intern at Braintrace helpling them
-                    |  build and update a web application using some of the technolgies
-                    |  I know as well some I'm just learning. For more information on
-                    |  my current of future endeavors check out my 
+                p(id='infoMsg') I am currentlyin the job market trying to find my starting
+                    |  point in my career. While I am waiting I am learning other skills
+                    |  on pluralsight for I love learning and growing as a person and a
+                    |  professional For more information on my current of future
+                    |  endeavors check out my 
                     a(href='https://www.linkedin.com/in/johnathan-auchterlonie-ba23aba8/') LinkedIn
-                    | .
-    div(class='info-box bottom' id='resume')
-        <iframe src="/pdf/Resume.pdf" style="width:100%;"></iframe>
+                    |.
+    br
